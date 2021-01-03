@@ -84,7 +84,7 @@ EOF
 
 # If you connect oracle database from external host, you need to port forwarding oracle port.
 # 1521 is oracle database default port.
-# In rhel and fedora compatible os firewalld is default firewall application and daemon.
+# In fedora and rhel compatible os, firewalld is default firewall application and daemon.
 firewall-cmd --add-port=1521/tcp --zone=public --permanent
 firewall-cmd reload
 ```
